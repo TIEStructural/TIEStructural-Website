@@ -110,6 +110,8 @@ section {
 .centered-text p {
     text-align: justify;
     text-align-last: center;
+    hyphens: auto;
+    -webkit-hyphens: auto;        /* for older Safari/iPhone versions */
 }
 
 /* Services photos */
