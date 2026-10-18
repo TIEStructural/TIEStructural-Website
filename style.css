@@ -166,13 +166,6 @@ footer {
     height: 80px;                /* a bit shorter than the full header */
 }
 
-/* One column of photos on narrow phones */
-@media (max-width: 500px) {
-    .photo-grid {
-        grid-template-columns: 1fr;
-    }
-}
-
 .email-btn {
     background-color: #7D2328;
     color: #FFFFFF;
@@ -198,4 +191,18 @@ footer {
     max-width: 100%;
     width: 340px;
     height: auto;
+}
+
+/* One column of photos on narrow phones */
+@media (max-width: 500px) {
+    .photo-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    .centered-text p {
+        text-align: center;
+        text-align-last: center;
+    }
 }
