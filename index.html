@@ -8,23 +8,82 @@
 </head>
 
 <body>
-    <header>
-        <h1>That's</h1>
-        <h1>Impressive</h1>
-        <h1>Engineering</h1>
+    <header id="site-header">
+        <img src="websitelogo.jpg" alt="TIE Structural logo" class="logo" id="logo">
+        <div class="title" id="title">
+            <h1>That's</h1>
+            <h1>Impressive</h1>
+            <h1 id="rotator" class="rotator">Engineering</h1>
+        </div>
     </header>
 
-    <main>
-        
-        <p> Welcome! This is my website. :) We do residential engineering here. </p>
-	<p> As you can tell, the website is a work in progress. </p>
-	<p> Please be patient while I work on getting this webpage up and running. </p>
-	<p> God bless and have a wonderful day! </p>
-	<p> - Matthew </p>
-        <img src="logo.jpg" alt="Logo">
-	<p> P.S. Please also enjoy this picture of my cat. </p>
-    </main>
-    <img src="cat.JPEG" alt="My Cat">
-</body>
+    <!-- Holds the space the fixed header takes up so content starts below it -->
+    <div id="header-spacer"></div>
 
+    <main>
+        <section id="home">
+            <div class="content centered-text">
+		<p class="lead">Engineering is more than math.<br>
+		Engineering is more than plans.</p>
+
+                <p>Good engineering requires good communication.
+                It requires integrity, respect, and honor.
+                It protects human life, health, and safety.
+                But engineering is even more than that.</p>
+
+                <p>At its core, the art of engineering is about enhancing the quality of life. Here at <strong>TIE Structural</strong>, we do more than engineering.
+                We make possible the art of living.</p>
+            </div>
+        </section>
+
+        <section id="services">
+            <div class="content">
+                <h2>Services</h2>
+                <div class="photo-grid">
+                    <figure>
+                        <img src="residential.jpeg" alt="A custom house">
+                        <figcaption>Residential</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="multifamily.jpeg" alt="A townhouse">
+                        <figcaption>Multi-Family</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="woodframing.jpeg" alt="Wood construction">
+                        <figcaption>Wood Framing</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="drafting.jpeg" alt="Blueprints">
+                        <figcaption>Drafting</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+        <section id="about">
+            <div class="content centered-text">
+                <h2>About</h2>
+                <p>TIE Structural was founded by Matthew Harris, a <s>certified nerd</s> structural engineer in rural Utah. He has a master’s degree from Utah State University and several years of engineering experience, including industrial, commercial, and residential.</p>
+		<img src="portrait.jpeg" alt="Matthew Harris" class="portrait">
+            </div>
+        </section>
+
+	<section id="contact">
+	    <div class="contentcontact">
+	        <h2>Contact</h2>
+        	<p>We’d love to hear from you!</p>
+	        <p>Please send us an email with details about your project.</p>
+
+        	<button type="button" id="email-btn" class="email-btn" aria-expanded="false">Show contact email address</button>
+	        <div id="email-box" class="email-box" hidden></div>
+
+	        <img src="logo.jpg" alt="TIE Structural logo" class="bottom-logo">
+ 	   </div>
+	</section>
+    </main>
+
+    <footer></footer>
+
+    <script src="script.js"></script>
+</body>
 </html>
